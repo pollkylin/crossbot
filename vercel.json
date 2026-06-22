@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "api/index.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/api/widget", "dest": "api/index.js" },
+    { "src": "/api/(.*)", "dest": "api/index.js" },
+    { "src": "/(.*)", "dest": "api/index.js" }
+  ],
+  "env": {
+    "AI_PROVIDER": "deepseek",
+    "AI_MODEL": "deepseek-chat"
+  }
+}

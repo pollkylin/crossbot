@@ -1,0 +1,14 @@
+{
+  "name": "crossbot",
+  "version": "1.0.0",
+  "description": "AI customer service chat widget for Shopify dropshipping stores",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "dependencies": {
+    "fastify": "^4.28.0",
+    "@fastify/cors": "^9.0.0"
+  }
+}
